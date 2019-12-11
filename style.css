@@ -91,11 +91,12 @@ body {
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+  background-color: rgba(137, 43, 226, 0.432);
 }
 
 .image-box {
-  width: 8em;
-  height: 4em;
+  width: 350px;
+  height: 100px;
   margin: 10px;
   border: 5px solid black;
   background-color: gray;
@@ -104,9 +105,12 @@ body {
 h1 {
   font-size: 30px;
   font-family: 'Revalia', cursive;
+  flex-wrap: wrap;
 }
 
 .footer-container {
   font-family: 'Revalia', cursive;
 }
+/*test code for image placement*/
+
 /*events page*/
