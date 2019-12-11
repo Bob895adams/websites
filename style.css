@@ -1,0 +1,83 @@
+/* Title image*/
+img {
+  width: 100%;
+  height: auto;
+}
+/*Center class for title image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 50px;
+}
+/*Background image*/
+body {
+  background: url(/images/background-image.png) no-repeat center center fixed;
+  background-size: cover;
+}
+/* not in use
+  .hero {
+    color: #fff;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 75px;
+    letter-spacing: -0.05em;
+    line-height: 1.2em;
+    font-family: 'Revalia', cursive;
+  }*/
+
+/*Nav Bar*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(183, 60, 231, 0.24);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #1c0235a9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Revalia', cursive;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #3e0b6d;
+  color: white;
+}
+/*Nav Bar End*/
+
+/*center flex box*/
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border: 5px solid;
+  font-family: 'Revalia', cursive;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  border: 5px solid;
+  padding-bottom: 2rem;
+  background-color: rgba(137, 43, 226, 0.548);
+}
