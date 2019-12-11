@@ -64,7 +64,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
+/*home page*/
 .flex-container > div {
   width: 500px;
   margin: 10px;
@@ -74,10 +74,39 @@ body {
   border: 5px solid;
   font-family: 'Revalia', cursive;
 }
-.video {
+/*about page*/
+
+/*Class for specific content page*/
+
+.object-container {
   display: flex;
-  justify-content: center;
-  border: 5px solid;
-  padding-bottom: 2rem;
-  background-color: rgba(137, 43, 226, 0.548);
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid gray;
 }
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.image-box {
+  width: 8em;
+  height: 4em;
+  margin: 10px;
+  border: 5px solid black;
+  background-color: gray;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Revalia', cursive;
+}
+
+.footer-container {
+  font-family: 'Revalia', cursive;
+}
+/*events page*/
