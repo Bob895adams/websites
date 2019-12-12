@@ -3,10 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS style sheet-->
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
@@ -17,41 +14,106 @@
 
   <body>
     <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="contact.html">Contact</a>
-        <a href="Newsletter.html">Newsletter</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+      <a href="Newsletter.html">Newsletter</a>
     </div>
     <div class="container">
       <img class="img-fluid center" src="images/project-title.png" alt="" />
     </div>
     <h1>Newsletter</h1>
-      <!-- Text Alignment and Flex box elements-->
+    <!-- Text Alignment and Flex box elements-->
+    <!-- Header -->
+    <div class="header" id="myHeader">
+      <h1>Image Grid</h1>
+      <p>Click on the buttons to change the grid view.</p>
+      <button class="btn" onclick="one()">1</button>
+      <button class="btn active" onclick="two()">2</button>
+      <button class="btn" onclick="four()">4</button>
     </div>
-    <div>
-      <div class="flex-container">
-        <div>
-          <h3>Para 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum
-            volutpat tellus diam, consequat gravida libero rhoncus ut.
-          </p>
-          <h3>Para 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum
-            volutpat tellus diam, consequat gravida libero rhoncus ut.
-          </p>
-          <h3>Para 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            semper diam at erat pulvinar, at pulvinar</d felis blandit. Vestibulum
-            volutpat tellus diam, consequat gravida libero rhoncus ut.
-          </p>
-        </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img src="/images/project-title.png" style="width:100%" />
+        <img src="/images/project-title.png" style="width:100%" />
+        <img src="/images/project-title.png" style="width:100%" />
+        <img src="/images/project-title.png" style="width:100%" />
+        <img src="/images/project-title.png" style="width:100%" />
+        <img src="/images/project-title.png" style="width:100%" />
+        <img src="/images/project-title.png" style="width:100%" />
       </div>
+      <div class="column">
+        <img src="/images/Proposed layout mod 6.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 6.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 6.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 6.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 6.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 6.png" style="width:100%" />
+      </div>
+      <div class="column">
+        <img src="/images/background-image.png" style="width:100%" />
+        <img src="/images/background-image.png" style="width:100%" />
+        <img src="/images/background-image.png" style="width:100%" />
+        <img src="/images/background-image.png" style="width:100%" />
+        <img src="/images/background-image.png" style="width:100%" />
+        <img src="/images/background-image.png" style="width:100%" />
+        <img src="/images/background-image.png" style="width:100%" />
+      </div>
+      <div class="column">
+        <img src="/images/Proposed layout mod 7.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 7.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 7.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 7.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 7.png" style="width:100%" />
+        <img src="/images/Proposed layout mod 7.png" style="width:100%" />
+      </div>
+    </div>
+
+    <script>
+      // Get the elements with class="column"
+      var elements = document.getElementsByClassName('column');
+
+      // Declare a loop variable
+      var i;
+
+      // Full-width images
+      function one() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = '100%'; // IE10
+          elements[i].style.flex = '100%';
+        }
+      }
+
+      // Two images side by side
+      function two() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = '50%'; // IE10
+          elements[i].style.flex = '50%';
+        }
+      }
+
+      // Four images side by side
+      function four() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = '25%'; // IE10
+          elements[i].style.flex = '25%';
+        }
+      }
+
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById('myHeader');
+      var btns = header.getElementsByClassName('btn');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', function() {
+          var current = document.getElementsByClassName('active');
+          current[0].className = current[0].className.replace(' active', '');
+          this.className += ' active';
+        });
+      }
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
