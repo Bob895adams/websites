@@ -267,7 +267,7 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  background: rgba(96, 5, 114, 0.315);
 }
 
 .header h1 {
@@ -277,14 +277,14 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(32, 4, 54, 0.466);
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #1d034662;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -292,7 +292,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.336);
   color: black;
 }
 
@@ -307,20 +307,20 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  background-color: #f1f1f1;
+  background-color: #f1f1f146;
   padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background-color: rgba(66, 22, 117, 0.651);
   width: 100%;
   padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: rgba(80, 13, 119, 0.329);
   padding: 20px;
   margin-top: 20px;
 }
