@@ -78,6 +78,7 @@ body {
 .flex-container {
   display: flex;
   justify-content: center;
+  background-color: rgba(137, 43, 226, 0.342);
 }
 /*home page*/
 .flex-container > div {
