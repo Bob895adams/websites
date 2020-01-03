@@ -18,10 +18,6 @@ body {
   padding: 200px;
   margin: auto;
 }
-.container {
-  border-radius: 5px;
-  background-color: #4c17924f;
-  padding: 20px;
 /* not in use
   .hero {
     color: #fff;
